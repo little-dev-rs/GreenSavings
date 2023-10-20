@@ -11,7 +11,7 @@ struct LearningMaterialsView: View {
     
     var viewModel = LearningMaterialsModel()
     
-    
+    var item: ItemViewModel
     
     var body: some View {
         
@@ -31,13 +31,15 @@ struct LearningMaterialsView: View {
                     }
                 }
             }
-            .navigationTitle("Electricity")
+            .navigationTitle(item.name)
             .padding()
         }
         
     }
 }
 
-#Preview {
-    LearningMaterialsView()
+/*
+ #Preview {
+LearningMaterialsView()
 }
+*/

@@ -18,8 +18,12 @@ struct RowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
                     ForEach(model.items) { item in
-                        ItemView(model: item)
-                            .padding(.trailing, 10)
+                        
+                        NavigationLink(destination: LearningMaterialsView(item: item),
+                                       label: {
+                            ItemView(model: item)
+                                .padding(.trailing, 10)
+                        })
                     }
                 }
             }
