@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ContentViewModel {
+class ContentViewModel{
     
     let navigationTitleText: String = "My green savings"
     
