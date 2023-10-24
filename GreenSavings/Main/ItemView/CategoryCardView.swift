@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-struct ItemView: View {
+struct CategoryCardView: View {
     
-    var model: ItemViewModel
+    var model: CategoryCardModel
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
+        ZStack(alignment: .bottomLeading) {
             RoundedRectangle(cornerRadius: 20)
-                .aspectRatio(1, contentMode: .fit)
-            
                 .foregroundColor(.clear)
                 .background(
                     Image(model.imageName)
@@ -23,6 +21,9 @@ struct ItemView: View {
                         .scaledToFill()
                        
                 )
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .frame(width: 260, height: 374)
+            LinearGradient(colors: [.clear, .black.opacity(0.8)], startPoint: .top, endPoint: .bottom)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             Text(model.name)
                 .font(.title2).bold()
@@ -35,7 +36,7 @@ struct ItemView: View {
 #if DEBUG
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(model: .init(id: 1, name: "Name", foregroundColor: .red, imageName: "electricity"))
+        CategoryCardView(model: .init(id: 1, name: "Name", imageName: "electricity"))
     }
 }
 #endif

@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct RowView: View {
+struct CategoriesRowView: View {
     
-    var model: RowViewModel
+    var model: CategoriesRowModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -18,21 +18,18 @@ struct RowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
                     ForEach(model.items) { item in
-                        ItemView(model: item)
+                        CategoryCardView(model: item)
                             .padding(.trailing, 10)
                     }
                 }
             }
-            .frame(height: model.height)
         }
     }
 }
 
-#if DEBUG
-//struct CategoryRow_Previews : PreviewProvider {
-//    static var previews: some View {
-////        CategoryRow(categoryName: "Name")
-//    }
-//}
-#endif
+struct CategoryRow_Previews : PreviewProvider {
+    static var previews: some View {
+        CategoriesRowView(model: .init(name: "Categories", items: MainViewModel().items))
+    }
+}
 

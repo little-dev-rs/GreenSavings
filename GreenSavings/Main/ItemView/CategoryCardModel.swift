@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-struct ItemViewModel: Identifiable {
+struct CategoryCardModel: Identifiable {
     let id: Int
     let name: String
-    let foregroundColor: Color
     let imageName: String
 }

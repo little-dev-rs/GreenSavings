@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct RowViewModel {
+struct CategoriesRowModel {
     let name: String
-    let items: [ItemViewModel]
-    let height: CGFloat
+    let items: [CategoryCardModel]
 }
