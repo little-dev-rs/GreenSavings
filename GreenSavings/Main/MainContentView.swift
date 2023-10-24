@@ -29,7 +29,7 @@ struct MainContentView: View {
                     CategoriesRowView(model: .init(name: "Categories", items: viewModel.items)) //TODO: pass height via view model
                         .padding(.top)
                 }
-//                .padding(40)
+                .padding()
                 .navigationTitle(viewModel.navigationTitleText)
                 
             }

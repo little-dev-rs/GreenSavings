@@ -18,8 +18,11 @@ struct CategoriesRowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
                     ForEach(model.items) { item in
-                        CategoryCardView(model: item)
-                            .padding(.trailing, 10)
+                        NavigationLink(destination: LearningMaterialsView(item: item),
+                                       label: {
+                            CategoryCardView(model: item)
+                                .padding(.trailing, 10)
+                        })
                     }
                 }
             }

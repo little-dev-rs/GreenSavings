@@ -15,7 +15,7 @@ struct GardenView: View {
         ZStack(alignment: .bottomLeading) {
         
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: UIScreen.main.bounds.width - 20, height: 140)
+                .frame(width: 300, height: 140)
                 .foregroundColor(.clear)
                 .background(
                     Image("garden2") //gardenModel.image

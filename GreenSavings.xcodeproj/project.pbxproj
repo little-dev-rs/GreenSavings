@@ -21,6 +21,9 @@
 		77E0B62F2AE2C3C8007A3B92 /* GardenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */; };
 		77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */; };
 		77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */; };
+		D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */; };
+		D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */; };
+		D4BD5FBF2AE2B9ED000A79B7 /* LearningMaterialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FBE2AE2B9ED000A79B7 /* LearningMaterialsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenContentView.swift; sourceTree = "<group>"; };
 		77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardView.swift; sourceTree = "<group>"; };
 		77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardModel.swift; sourceTree = "<group>"; };
+		D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterials.swift; sourceTree = "<group>"; };
+		D4BD5FBE2AE2B9ED000A79B7 /* LearningMaterialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
 				77E0B62D2AE2C3A0007A3B92 /* Garden */,
 				770927472ADDE79D00273776 /* Main */,
+				D4BD5FB92AE2B3DE000A79B7 /* LearningMaterialsView */,
 				770927482ADDE7B700273776 /* Resources */,
 				77DBDCA32ADD910100C68CB8 /* Assets.xcassets */,
 				77DBDCA52ADD910100C68CB8 /* GreenSavings.entitlements */,
@@ -153,6 +160,16 @@
 				77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */,
 			);
 			path = PlantCard;
+               sourceTree = "<group>";
+        };
+		D4BD5FB92AE2B3DE000A79B7 /* LearningMaterialsView */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */,
+				D4BD5FBE2AE2B9ED000A79B7 /* LearningMaterialsModel.swift */,
+				D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */,
+			);
+			path = LearningMaterialsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,9 @@
 				77DBDCAF2ADD939000C68CB8 /* CategoriesRowView.swift in Sources */,
 				77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */,
 				77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */,
+				D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */,
+				D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */,
+				D4BD5FBF2AE2B9ED000A79B7 /* LearningMaterialsModel.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,
 				7788D6362ADEDBF200CAEF40 /* GardenView.swift in Sources */,
