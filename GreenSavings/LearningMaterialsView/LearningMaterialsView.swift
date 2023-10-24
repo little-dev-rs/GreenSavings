@@ -11,7 +11,7 @@ struct LearningMaterialsView: View {
     
     var viewModel = LearningMaterialsModel()
     
-    var item: ItemViewModel
+    var item: CategoryCardModel
     
     var body: some View {
         
