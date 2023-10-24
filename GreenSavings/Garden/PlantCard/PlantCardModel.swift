@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct PlantCardModel: Identifiable {
+    let id: UUID = UUID()
+    let name: String
+    let description: String
+    let imageName: String
+}
