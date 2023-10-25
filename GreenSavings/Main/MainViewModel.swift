@@ -19,10 +19,7 @@ class MainViewModel {
                                          ])
     
     let categories: CategoriesRowModel = .init(name: "Categories",
-                                               items: [
-                                                .init(id: 1, name: "Electricity", imageName: "Main/electricity"),
-                                                .init(id: 2, name: "Water", imageName: "Main/water"),
-                                                .init(id: 3, name: "Pollution", imageName: "Main/energy")
-                                               ])
-
+                                               items: [.init(id: 1, name: "Electricity", imageName: "Main/electricity", learningMaterials: []),
+                                                       .init(id: 2, name: "Water", imageName: "Main/water", learningMaterials: []),
+                                                       .init(id: 3, name: "Pollution", imageName: "Main/energy", learningMaterials: [])])
 }
