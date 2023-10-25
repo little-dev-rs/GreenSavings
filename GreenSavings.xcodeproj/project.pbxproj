@@ -264,7 +264,6 @@
 				7788D6342ADED57800CAEF40 /* ContentViewModel.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
 				D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */,
-				771F4D782ADDEDBA0001024A /* RowViewModel.swift in Sources */,
 				D4BD5FBF2AE2B9ED000A79B7 /* LearningMaterialsModel.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,
 				7788D6362ADEDBF200CAEF40 /* GardenView.swift in Sources */,
