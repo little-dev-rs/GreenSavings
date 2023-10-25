@@ -28,9 +28,6 @@ struct ContentView: View {
                         .padding(.top)
                     
                     RowView(model: .init(name: "Categories", items: viewModel.items, height: 140))
-                        .padding(.top)
-                    RowView(model: .init(name: "Tutorials", items: viewModel.items, height: 140))
-                        .padding(.top)
                 }
                 .padding()
                 .navigationTitle(viewModel.navigationTitleText)

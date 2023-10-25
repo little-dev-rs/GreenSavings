@@ -12,4 +12,11 @@ struct ItemViewModel: Identifiable {
     let name: String
     let foregroundColor: Color
     let imageName: String
+    
+    
+    var learningMaterials: [LearningMaterials]
+    //to keep the connection between views
 }
+
+
+

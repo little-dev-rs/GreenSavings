@@ -32,10 +32,11 @@ struct ItemView: View {
     }
 }
 
-#if DEBUG
+/*
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
         ItemView(model: .init(id: 1, name: "Name", foregroundColor: .red, imageName: "electricity"))
     }
 }
 #endif
+*/
