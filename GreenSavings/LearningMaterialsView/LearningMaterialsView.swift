@@ -11,7 +11,7 @@ struct LearningMaterialsView: View {
     
     @State var showModal=false
     
-    var item: ItemViewModel
+    var item: CategoryCardModel
     
     var body: some View {
         NavigationStack{

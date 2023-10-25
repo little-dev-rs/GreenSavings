@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct GardenView: View {
+    
+//    let gardenModel: GardenModel
+
     var body: some View {
-        ZStack(alignment: .topLeading) {
+        ZStack(alignment: .bottomLeading) {
         
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: 300, height: 140)
+                .frame(height: 140)
                 .foregroundColor(.clear)
                 .background(
-                    Image("garden2")
+                    Image("Main/garden") //gardenModel.image
                         .resizable()
                         .scaledToFill()
                        
@@ -28,6 +31,7 @@ struct GardenView: View {
                 .padding()
         }
     }
+
 }
 
 struct GardenView_Previews: PreviewProvider {
