@@ -14,7 +14,7 @@ struct PlantCardView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             RoundedRectangle(cornerRadius: 20)
-                .frame(height: 400)
+                .frame(height: 350)
                 .padding()
                 .foregroundColor(.clear)
                 .background(
@@ -42,7 +42,6 @@ struct PlantCardView: View {
 
 struct PlantCardView_Previews: PreviewProvider {
     static var previews: some View {
-        GardenContentView()
-//        PlantCardView(model: .init(name: "Oak", description: "the very old tree", imageName: ""))
+        GardenContentView(model: MainViewModel().gardenModel)
     }
 }

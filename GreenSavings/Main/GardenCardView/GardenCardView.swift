@@ -7,26 +7,27 @@
 
 import SwiftUI
 
-struct GardenView: View {
+struct GardenCardView: View {
     
-//    let gardenModel: GardenModel
+    let gardenModel: GardenModel
+    let height: CGFloat
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
         
             RoundedRectangle(cornerRadius: 20)
-                .frame(height: 140)
+                .frame(height: height)
                 .foregroundColor(.clear)
                 .background(
-                    Image("Main/garden") //gardenModel.image
+                    Image(gardenModel.imageName)
                         .resizable()
                         .scaledToFill()
                        
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             
-            Text("My Garden")
-                .font(.title2).bold()
+            Text(gardenModel.name)
+                .font(.largeTitle).bold()
                 .foregroundColor(.white)
                 .padding()
         }
@@ -36,6 +37,6 @@ struct GardenView: View {
 
 struct GardenView_Previews: PreviewProvider {
     static var previews: some View {
-        GardenView()
+        GardenCardView(gardenModel: .init(name: "My Garden", imageName: "Main/garden", plants: []), height: 170)
     }
 }

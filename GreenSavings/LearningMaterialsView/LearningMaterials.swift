@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 struct LearningMaterials: Identifiable{
-    var id = UUID()
+    var id=UUID()
+    
     var learningMaterialsTitle: String
     
     var unlock: Int
@@ -21,3 +22,8 @@ struct LearningMaterials: Identifiable{
     var textModal=" "
     //init the image and text in MainViewModel
 }
+
+
+//"Information", "What to buy", "Article", "Video", "Article", "Curiosity", "What to buy"
+
+//backgroundColor is to set in ContentViewModel for each learningMaterialsTitle, and remove the init there

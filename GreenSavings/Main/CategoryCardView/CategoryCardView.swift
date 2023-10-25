@@ -22,11 +22,9 @@ struct CategoryCardView: View {
                        
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                .frame(width: 260, height: 374)
-            LinearGradient(colors: [.clear, .black.opacity(0.8)], startPoint: .top, endPoint: .bottom)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .aspectRatio(0.62, contentMode: .fill)
             Text(model.name)
-                .font(.title2).bold()
+                .font(.largeTitle).bold()
                 .foregroundColor(.white)
                 .padding()
         }
@@ -37,7 +35,7 @@ struct CategoryCardView: View {
  #if DEBUG
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCardView(model: .init(id: 1, name: "Name", imageName: "electricity"))
+        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: ""))
     }
 }
 #endif

@@ -15,7 +15,6 @@ struct LearningMaterialsView: View {
     @State var changeColor=0
     
     var body: some View {
-        
         NavigationStack{
             ScrollView(.vertical){
                 //learning Materials card
@@ -61,15 +60,13 @@ struct LearningMaterialsView: View {
                         ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials, changeColor: $changeColor)
                     })
                 }
-                
             }
-            
             .navigationTitle(item.name)
             .padding()
         }
-        
     }
 }
+
 
 /*
  #Preview {
