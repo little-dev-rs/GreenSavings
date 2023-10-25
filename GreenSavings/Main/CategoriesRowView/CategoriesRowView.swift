@@ -9,12 +9,14 @@ import SwiftUI
 
 struct CategoriesRowView: View {
     
-    var model: CategoriesRowModel
+    let model: CategoriesRowModel
+    let height: CGFloat
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(model.name)
-                .font(.headline)
+                .font(.largeTitle).bold()
+                .padding(.vertical)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
                     ForEach(model.items) { item in
@@ -27,12 +29,13 @@ struct CategoriesRowView: View {
                 }
             }
         }
+        .frame(height: height)
     }
 }
 
 struct CategoryRow_Previews : PreviewProvider {
     static var previews: some View {
-        CategoriesRowView(model: .init(name: "Categories", items: MainViewModel().items))
+        CategoriesRowView(model: MainViewModel().categories, height: 300)
     }
 }
 

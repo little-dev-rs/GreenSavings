@@ -11,9 +11,18 @@ class MainViewModel {
     
     let navigationTitleText: String = "Green savings"
     
-    let greetingText: String = "Hey! \nNice to meet you, eco hero! \nHere you can learn how to save you money and planet. Earn green coins and spend them to plant you own tree!"
+    let gardenModel: GardenModel = .init(name: "My Garden",
+                                         imageName: "Main/garden",
+                                         plants:  [
+                                            .init(name: "Oak", description: "In ancient Greece the oak was the tree consecrated to Zeus.", imageName: "Garden/oak"),
+                                            .init(name: "Rose", description: "Wonderful rose", imageName: "Garden/oak")
+                                         ])
     
-    let items: [CategoryCardModel] = [.init(id: 1, name: "Electricity", imageName: "Main/electricity"),
-                                      .init(id: 2, name: "Water", imageName: "Main/water"),
-                                      .init(id: 3, name: "Pollution", imageName: "Main/energy")]
+    let categories: CategoriesRowModel = .init(name: "Categories",
+                                               items: [
+                                                .init(id: 1, name: "Electricity", imageName: "Main/electricity"),
+                                                .init(id: 2, name: "Water", imageName: "Main/water"),
+                                                .init(id: 3, name: "Pollution", imageName: "Main/energy")
+                                               ])
+
 }

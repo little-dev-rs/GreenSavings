@@ -1,5 +1,5 @@
 //
-//  GardenView.swift
+//  CategoryView.swift
 //  GreenSavings
 //
 //  Created by GreenSavingsTeam on 16/10/23.
@@ -7,35 +7,34 @@
 
 import SwiftUI
 
-struct GardenView: View {
+struct CategoryCardView: View {
     
-//    let gardenModel: GardenModel
-
+    var model: CategoryCardModel
+    
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-        
             RoundedRectangle(cornerRadius: 20)
-                .frame(height: 140)
                 .foregroundColor(.clear)
                 .background(
-                    Image("Main/garden") //gardenModel.image
+                    Image(model.imageName)
                         .resizable()
                         .scaledToFill()
                        
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-            
-            Text("My Garden")
-                .font(.title2).bold()
+                .aspectRatio(0.62, contentMode: .fill)
+            Text(model.name)
+                .font(.largeTitle).bold()
                 .foregroundColor(.white)
                 .padding()
         }
     }
-
 }
 
-struct GardenView_Previews: PreviewProvider {
+#if DEBUG
+struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GardenView()
+        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: ""))
     }
 }
+#endif

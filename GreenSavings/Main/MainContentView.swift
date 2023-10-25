@@ -18,16 +18,17 @@ struct MainContentView: View {
             VStack {
                 
                 ScrollView(.vertical, showsIndicators: false) {
-
+                    
                     NavigationLink {
-                        GardenContentView()
+                        GardenContentView(model: viewModel.gardenModel)
                     } label: {
-                        GardenView() //TODO: pass image and height here via viewModel
-                            .padding(.top)
+                        GardenCardView(gardenModel: viewModel.gardenModel,
+                                       height: UIScreen.main.bounds.size.height * 0.2)
                     }
                     
-                    CategoriesRowView(model: .init(name: "Categories", items: viewModel.items)) //TODO: pass height via view model
-                        .padding(.top)
+                    CategoriesRowView(model: viewModel.categories,
+                                      height: UIScreen.main.bounds.size.height * 0.52)
+                    .padding(.top)
                 }
                 .padding()
                 .navigationTitle(viewModel.navigationTitleText)
