@@ -11,18 +11,27 @@ struct ModalMaterialsView: View {
     
     @Binding var isShowed: Bool
     
-    var learningMaterialsTitle: LearningMaterials
+    var learningMaterials: LearningMaterials
     
     var body: some View {
-        
-        
-        Image(learningMaterialsTitle.imageName)
-        
-        Button(action: {
-            self.isShowed=false
-        }, label: {
-            Text("Done")
-        })
+        VStack(alignment: .center){
+            Image(learningMaterials.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 350, height: 240)
+            Text(learningMaterials.textMaterials)
+                .font(
+                Font.custom("SF Pro Display", size: 18)
+                .weight(.medium)
+                )
+                .multilineTextAlignment(.center)
+                .padding()
+            Button(action: {
+                self.isShowed=false
+            }, label: {
+                Text("Done")
+            }).padding()
+        }
     }
 }
 
