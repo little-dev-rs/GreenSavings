@@ -33,10 +33,12 @@ struct CategoryCardView: View {
     }
 }
 
-#if DEBUG
+/*
+ #if DEBUG
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryCardView(model: .init(id: 1, name: "Name", imageName: "electricity"))
     }
 }
 #endif
+*/

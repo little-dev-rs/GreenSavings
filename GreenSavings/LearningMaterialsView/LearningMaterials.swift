@@ -12,9 +12,12 @@ struct LearningMaterials: Identifiable{
     var id = UUID()
     var learningMaterialsTitle: String
     
-    //li devo mettere scuri
+    var unlock: Int
     var foregroundColor: Color = .pink
+    //init color in MainViewModel
     
     //the associated modals to materials
-    var imageName="garden2"
+    var imageName=" "
+    var textModal=" "
+    //init the image and text in MainViewModel
 }

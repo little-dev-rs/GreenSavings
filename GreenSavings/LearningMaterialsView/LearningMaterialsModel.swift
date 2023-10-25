@@ -18,3 +18,7 @@ class LearningMaterialsModel {
         LearningMaterials(learningMaterialsTitle: "What to buy")
     ]
 }
+
+
+//da cancellare
+//item è categorycardmodel 
