@@ -17,6 +17,7 @@
 		77DBDCA22ADD90FF00C68CB8 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */; };
 		77DBDCA42ADD910100C68CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DBDCA32ADD910100C68CB8 /* Assets.xcassets */; };
 		77DBDCA82ADD910100C68CB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DBDCA72ADD910100C68CB8 /* Preview Assets.xcassets */; };
+		D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */; };
 		77DBDCAF2ADD939000C68CB8 /* CategoriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDCAE2ADD939000C68CB8 /* CategoriesRowView.swift */; };
 		77E0B62F2AE2C3C8007A3B92 /* GardenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */; };
 		77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */; };
@@ -39,6 +40,7 @@
 		77DBDCA32ADD910100C68CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DBDCA52ADD910100C68CB8 /* GreenSavings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GreenSavings.entitlements; sourceTree = "<group>"; };
 		77DBDCA72ADD910100C68CB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMaterialsView.swift; sourceTree = "<group>"; };
 		77DBDCAE2ADD939000C68CB8 /* CategoriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRowView.swift; sourceTree = "<group>"; };
 		77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenContentView.swift; sourceTree = "<group>"; };
 		77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D46BA7B52AE6C95E0079FFAC /* ModalMaterialsView */ = {
+			isa = PBXGroup;
+			children = (
+				D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */,
+			);
+			path = ModalMaterialsView;
+            sourceTree = "<group>";
+        };
 		77E0B62D2AE2C3A0007A3B92 /* Garden */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 				D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */,
 				D4BD5FBE2AE2B9ED000A79B7 /* LearningMaterialsModel.swift */,
 				D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */,
+				D46BA7B52AE6C95E0079FFAC /* ModalMaterialsView */,
 			);
 			path = LearningMaterialsView;
 			sourceTree = "<group>";
@@ -255,6 +266,7 @@
 				D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */,
 				D4BD5FBF2AE2B9ED000A79B7 /* LearningMaterialsModel.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
+				D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,
 				7788D6362ADEDBF200CAEF40 /* GardenView.swift in Sources */,
 			);

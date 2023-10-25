@@ -13,6 +13,8 @@ struct LearningMaterialsView: View {
     
     var item: CategoryCardModel
     
+    @State var showModal=false
+    
     var body: some View {
         
         NavigationStack{
@@ -23,14 +25,22 @@ struct LearningMaterialsView: View {
                     ZStack(alignment: .leading){
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 350, height: 80)
-                            .foregroundColor(.pink)
+                            .foregroundColor(learningMaterialsTitle.foregroundColor)
                         Text(learningMaterialsTitle.learningMaterialsTitle)
                             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                             .bold()
                             .padding()
                     }
+                    .onTapGesture {
+                        self.showModal=true
+                    }
+                    .sheet(isPresented: $showModal, content: {
+                        ModalMaterialsView(isShowed: $showModal, learningMaterialsTitle: learningMaterialsTitle)
+                    })
                 }
+                
             }
+            
             .navigationTitle(item.name)
             .padding()
         }
@@ -40,6 +50,8 @@ struct LearningMaterialsView: View {
 
 /*
  #Preview {
-LearningMaterialsView()
-}
-*/
+ LearningMaterialsView()
+ }
+ 
+ */
+
