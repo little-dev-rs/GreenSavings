@@ -15,10 +15,10 @@ struct GardenView: View {
         ZStack(alignment: .bottomLeading) {
         
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: 300, height: 140)
+                .frame(height: 140)
                 .foregroundColor(.clear)
                 .background(
-                    Image("garden2") //gardenModel.image
+                    Image("Main/garden") //gardenModel.image
                         .resizable()
                         .scaledToFill()
                        
