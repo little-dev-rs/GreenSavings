@@ -9,48 +9,55 @@ import SwiftUI
 
 struct LearningMaterialsView: View {
     
-    @State var showModal=false
-    
     var item: CategoryCardModel
+    
+    @State var showModal=false
+    @State var changeColor=0
     
     var body: some View {
         NavigationStack{
             ScrollView(.vertical){
                 //learning Materials card
-                ForEach(item.learningMaterials){ learningMaterials in
+                ForEach(item.learningMaterials) { learningMaterials in
+                    
                     ZStack(alignment: .leading){
-                        if learningMaterials.unlock {
-                            RoundedRectangle(cornerRadius: 20)
-                                .frame(width: 350, height: 80)
-                                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
-                                .foregroundColor(learningMaterials.backgroundColor)
+                        if learningMaterials.unlock<=changeColor{
                             
-                            Text(learningMaterials.learningMaterialsTitle)
-                                .font(
-                                    Font.custom("SF Pro Display", size: 34)
-                                        .weight(.medium)
-                                )
-                                .padding()
-                        }
-                        else{
                             Rectangle()
-                                .frame(width: 350, height: 80)
-                                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                                 .foregroundColor(.clear)
-                                .background(Color(red: 0.36, green: 0.35, blue: 0.35).opacity(0.88))
+                                .frame(width: 350, height: 80)
+                                .background(learningMaterials.foregroundColor)
                                 .cornerRadius(20)
                             Text(learningMaterials.learningMaterialsTitle)
-                                .font(
-                                    Font.custom("SF Pro Display", size: 34)
-                                        .weight(.medium)
-                                )
-                                .padding()
+                              .font(
+                                Font.custom("SF Pro Display", size: 34)
+                                  .weight(.medium)
+                              )
+                              .kerning(0.374)
+                              .foregroundColor(.black)
+                              .padding()
                         }
-                    }.onTapGesture {
+                            else{
+                                Rectangle()
+                                    .foregroundColor(.clear)
+                                    .frame(width: 350, height: 80)
+                                    .background(Color(red: 0.36, green: 0.35, blue: 0.35).opacity(0.88))
+                                    .cornerRadius(20)
+                                Text(learningMaterials.learningMaterialsTitle)
+                                  .font(
+                                    Font.custom("SF Pro Display", size: 34)
+                                      .weight(.medium)
+                                  )
+                                  .kerning(0.374)
+                                  .foregroundColor(.black)
+                                  .padding()
+                            }
+                    }
+                    .onTapGesture {
                         self.showModal=true
                     }
                     .sheet(isPresented: $showModal, content: {
-                        ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials)
+                        ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials, changeColor: $changeColor)
                     })
                 }
             }

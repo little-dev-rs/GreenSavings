@@ -11,10 +11,10 @@ struct CategoryCardModel: Identifiable {
     let id: Int
     let name: String
     let imageName: String
+   
     
     
     var learningMaterials: [LearningMaterials]
-    //to keep the connection between views
 }
 
 

@@ -32,6 +32,7 @@ struct CategoryCardView: View {
 }
 
 /*
+ #if DEBUG
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: ""))
