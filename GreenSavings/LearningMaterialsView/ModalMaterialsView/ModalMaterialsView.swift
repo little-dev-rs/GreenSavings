@@ -43,7 +43,9 @@ struct ModalMaterialsView: View {
             }
             Button(action: {
                 self.isShowed=false
-                self.changeColor+=1
+                if learningMaterials.unlock==changeColor{
+                    self.changeColor+=1
+                }
             }, label: {
                 Text("Done")
             })
