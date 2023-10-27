@@ -21,11 +21,16 @@ struct LearningMaterialsView: View {
                 VStack(spacing: 20) {
                     ForEach(item.learningMaterials) { learningMaterials in
                         LearningMaterialCard(model: learningMaterials)
+                            .onTapGesture {
+                                self.showModal = true
+                            }
+                            .sheet(isPresented: $showModal, content: {
+                                ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials)
+                            })
                     }
                 }
             }.padding(.top)
                 .navigationTitle(item.name)
-            
         }
         .background(Color(red: 0.95, green: 0.95, blue: 0.95))
         

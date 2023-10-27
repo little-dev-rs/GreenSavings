@@ -46,6 +46,6 @@ struct ModalMaterialsView: View {
 
 //struct ModalMaterialsView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ModalMaterialsView(isShowed: <#Binding<Bool>#>, learningMaterials: <#LearningMaterials#>)
+//        ModalMaterialsView(isShowed: false., learningMaterials: .init(learningMaterialsTitle: "", isUnlocked: true, isLearned: false, giftPlant: .init(name: "", description: "", imageName: "")))
 //    }
 //}

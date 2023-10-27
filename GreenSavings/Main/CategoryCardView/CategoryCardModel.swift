@@ -17,7 +17,6 @@ struct CategoryCardModel: Identifiable {
             progress = (learningMaterials.map { $0.isLearned }.count) / learningMaterials.count * 100
         }
     }
-    //to keep the connection between views
 }
 
 

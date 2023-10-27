@@ -70,8 +70,9 @@
 		770927472ADDE79D00273776 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
 				77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */,
+				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
+				7788D6372ADEDC2A00CAEF40 /* GardenView */,
 				7788D6372ADEDC2A00CAEF40 /* GardenCardView */,
 				771F4D792ADDEED40001024A /* CategoriesRowView */,
 				771F4D7C2ADDEEE90001024A /* CategoryCardView */,
@@ -293,7 +294,6 @@
 				77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */,
 				D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */,
 				D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */,
-				7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
 				D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,

@@ -44,8 +44,8 @@ struct CategoryCardView: View {
     
 }
 
-//struct ItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: "", learningMaterials: []))
-//    }
-//}
+struct CategoryCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: "", progress: 30, learningMaterials: [.init(learningMaterialsTitle: "", isUnlocked: false, isLearned: false, giftPlant: .init(name: "oak", description: "", imageName: ""))]))
+    }
+}
