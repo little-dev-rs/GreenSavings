@@ -11,67 +11,72 @@ struct LearningMaterialsView: View {
     
     var item: CategoryCardModel
     
-    @State var showModal=false
+    @State var showModal0=false
+    @State var showModal1=false
+    @State var showModal2=false
+    @State var showModal3=false
+    
     @State var changeColor=0
     
     var body: some View {
         NavigationStack{
             ScrollView(.vertical){
                 //learning Materials card
-                ForEach(item.learningMaterials) { learningMaterials in
-                    
-                    ZStack(alignment: .leading){
-                        if learningMaterials.unlock<=changeColor{
-                            
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 350, height: 80)
-                                .background(learningMaterials.foregroundColor)
-                                .cornerRadius(20)
-                            Text(learningMaterials.learningMaterialsTitle)
-                              .font(
-                                Font.custom("SF Pro Display", size: 34)
-                                  .weight(.medium)
-                              )
-                              .kerning(0.374)
-                              .foregroundColor(.black)
-                              .padding()
-                        }
-                            else{
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 350, height: 80)
-                                    .background(Color(red: 0.36, green: 0.35, blue: 0.35).opacity(0.88))
-                                    .cornerRadius(20)
-                                Text(learningMaterials.learningMaterialsTitle)
-                                  .font(
-                                    Font.custom("SF Pro Display", size: 34)
-                                      .weight(.medium)
-                                  )
-                                  .kerning(0.374)
-                                  .foregroundColor(.black)
-                                  .padding()
+                if item.learningMaterials[0].unlock<=changeColor {
+                    LearningMaterialsUnlocked(learningMaterials: item.learningMaterials[0])
+                            .onTapGesture {
+                                showModal0.toggle()
                             }
+                            .sheet(isPresented: $showModal0, content: {
+                                ModalMaterialsView(learningMaterials: item.learningMaterials[0], changeColor: $changeColor)
+                            })
+
                     }
-                    .onTapGesture {
-                        self.showModal=true
+                    else{
+                        LearningMaterialsLocked(learningMaterials: item.learningMaterials[0])
                     }
-                    .sheet(isPresented: $showModal, content: {
-                        ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials, changeColor: $changeColor)
-                    })
+                if item.learningMaterials[1].unlock<=changeColor {
+                    LearningMaterialsUnlocked(learningMaterials: item.learningMaterials[1])
+                        .onTapGesture {
+                            showModal1.toggle()
+                        }
+                        .sheet(isPresented: $showModal1, content: {
+                            ModalMaterialsView(learningMaterials: item.learningMaterials[1], changeColor: $changeColor)
+                        })
                 }
+                else{
+                    LearningMaterialsLocked(learningMaterials: item.learningMaterials[1])
+                }
+                if item.learningMaterials[2].unlock<=changeColor {
+                    LearningMaterialsUnlocked(learningMaterials: item.learningMaterials[2])
+                            .onTapGesture {
+                                showModal2.toggle()
+                            }
+                            .sheet(isPresented: $showModal2, content: {
+                                ModalMaterialsView(learningMaterials: item.learningMaterials[2], changeColor: $changeColor)
+                            })
+
+                    }
+                    else{
+                        LearningMaterialsLocked(learningMaterials: item.learningMaterials[2])
+                    }
+                if item.learningMaterials[3].unlock<=changeColor {
+                    LearningMaterialsUnlocked(learningMaterials: item.learningMaterials[3])
+                            .onTapGesture {
+                                showModal3.toggle()
+                            }
+                            .sheet(isPresented: $showModal3, content: {
+                                ModalMaterialsView(learningMaterials: item.learningMaterials[3], changeColor: $changeColor)
+                            })
+
+                    }
+                    else{
+                        LearningMaterialsLocked(learningMaterials: item.learningMaterials[3])
+                    }
+                
             }
             .navigationTitle(item.name)
             .padding()
         }
     }
 }
-
-
-/*
- #Preview {
- LearningMaterialsView()
- }
- 
- */
-

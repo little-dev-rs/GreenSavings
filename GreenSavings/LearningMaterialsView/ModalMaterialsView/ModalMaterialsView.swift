@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ModalMaterialsView: View {
     
-    @Binding var isShowed: Bool
+    @Environment(\.dismiss) var dismiss
     
     var learningMaterials: LearningMaterials
     
@@ -42,19 +42,11 @@ struct ModalMaterialsView: View {
                     .padding()
             }
             Button(action: {
-                self.isShowed=false
-                if learningMaterials.unlock==changeColor{
-                    self.changeColor+=1
-                }
+                changeColor+=1
+                dismiss()
             }, label: {
                 Text("Done")
             })
         }
     }
 }
-
-/*
- #Preview {
- ModalMaterialsView()
- }
- */
