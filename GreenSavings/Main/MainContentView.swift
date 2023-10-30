@@ -15,26 +15,31 @@ struct MainContentView: View {
         
         NavigationStack {
             
-            VStack {
+            ZStack {
+                Image("background")
+                    .resizable()
+                    .ignoresSafeArea()
                 
-                ScrollView(.vertical, showsIndicators: false) {
+                VStack {
                     
-                    NavigationLink {
-                        GardenContentView()
-                    } label: {
-                        GardenCardView(gardenModel: viewModel.gardenModel,
-                                       height: UIScreen.main.bounds.size.height * 0.2)
+                    ScrollView(.vertical, showsIndicators: false) {
+                        
+                        NavigationLink {
+                            GardenContentView()
+                        } label: {
+                            GardenCardView(gardenModel: viewModel.gardenModel,
+                                           height: UIScreen.main.bounds.size.height * 0.2)
+                        }
+                        
+                        CategoriesRowView(model: viewModel.categories, height: UIScreen.main.bounds.size.height * 0.50)
+                        
                     }
+                    .padding()
+                    .navigationTitle(viewModel.navigationTitleText)
                     
-                    CategoriesRowView(model: viewModel.categories, height: UIScreen.main.bounds.size.height * 0.50)
-             
                 }
-                .padding()
-                .navigationTitle(viewModel.navigationTitleText)
-                
             }
         }
-
     }
 }
 
