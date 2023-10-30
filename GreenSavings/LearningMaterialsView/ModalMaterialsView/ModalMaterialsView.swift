@@ -18,7 +18,6 @@ struct ModalMaterialsView: View {
     
         ZStack {
             VStack(alignment: .center){
-                let _print = print("test1 3 learningMaterial \(learningMaterial)")
                 Image(learningMaterial.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
