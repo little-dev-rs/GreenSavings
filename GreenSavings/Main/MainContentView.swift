@@ -20,7 +20,7 @@ struct MainContentView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     NavigationLink {
-                        GardenContentView(model: viewModel.gardenModel)
+                        GardenContentView()
                     } label: {
                         GardenCardView(gardenModel: viewModel.gardenModel,
                                        height: UIScreen.main.bounds.size.height * 0.2)

@@ -8,5 +8,4 @@
 struct GardenModel {
     var name: String
     var imageName: String
-    var plants: [PlantCardModel]
 }

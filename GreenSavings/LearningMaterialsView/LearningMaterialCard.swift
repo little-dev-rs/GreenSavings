@@ -28,12 +28,20 @@ struct LearningMaterialCard: View {
                 
                 Spacer()
                 
-                Image(model.isLearned ? model.giftPlant.imageName : "Garden/blurred3")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                    .padding()
-                
+                ZStack {
+                    Image(model.giftPlant.imageName)
+                        .resizable()
+                        .blur(radius: model.isLearned ? 0 : 5)
+                        .frame(width: 40, height: 40)
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .padding()
+                    if !model.isLearned {
+                        Image(systemName: "lock.fill")
+                            .foregroundColor(.white)
+                    }
+                    
+                }
+
             }
 
             if !model.isUnlocked {

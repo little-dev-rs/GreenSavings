@@ -10,6 +10,7 @@ import SwiftUI
 
 struct LearningMaterials: Identifiable {
     var id = UUID()
+    var backgroundColor: Color = .cyan
     var learningMaterialsTitle: String
     var isUnlocked: Bool
     var isLearned: Bool

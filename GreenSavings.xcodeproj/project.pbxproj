@@ -71,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */,
-				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
-				7788D6372ADEDC2A00CAEF40 /* GardenView */,
 				7788D6372ADEDC2A00CAEF40 /* GardenCardView */,
 				771F4D792ADDEED40001024A /* CategoriesRowView */,
 				771F4D7C2ADDEEE90001024A /* CategoryCardView */,
@@ -136,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				77DBDC9F2ADD90FF00C68CB8 /* GreenSavingsApp.swift */,
+				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
 				77E71CEE2AE99E5E00C0D166 /* CustomAlertView */,
 				77E0B62D2AE2C3A0007A3B92 /* Garden */,
 				770927472ADDE79D00273776 /* Main */,

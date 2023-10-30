@@ -11,26 +11,32 @@ struct GardenContentView: View {
     
     @Environment(\.presentationMode) var presentationMode
 
-    var model: GardenModel
+    var plants = MainViewModel().categories.items.flatMap { $0.learningMaterials }.map { $0.giftPlant }
+//    var plants = MainViewModel().categories.items.flatMap { $0.learningMaterials }.filter({ $0.isLearned }).map { $0.giftPlant  }
     
     var body: some View {
+        
         NavigationView {
+            
             VStack {
+                
                 ScrollView {
-                    ForEach(model.plants) { plant in
+
+                    ForEach(plants) { plant in
                         PlantCardView(model: plant)
                             .padding()
                     }
+                    
                 }
 
             }
         }
-        .navigationTitle(model.name)
+        .navigationTitle("My garden")
     }
 }
 
 struct GardenContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GardenContentView(model: MainViewModel().gardenModel)
+        GardenContentView()
     }
 }

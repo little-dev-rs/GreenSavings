@@ -19,13 +19,13 @@ struct LearningMaterialsView: View {
             
             ScrollView(.vertical) {
                 VStack(spacing: 20) {
-                    ForEach(item.learningMaterials) { learningMaterials in
-                        LearningMaterialCard(model: learningMaterials)
+                    ForEach(item.learningMaterials) { material in
+                        LearningMaterialCard(model: material)
                             .onTapGesture {
                                 self.showModal = true
                             }
                             .sheet(isPresented: $showModal, content: {
-                                ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials)
+                                ModalMaterialsView(isShowed: $showModal, learningMaterial: material)
                             })
                     }
                 }
@@ -41,7 +41,7 @@ struct LearningMaterialsView: View {
 struct LearningMaterialsView_Previews : PreviewProvider {
 
     static var previews: some View {
-        LearningMaterialsView(item: MainViewModel().categories.items.first ?? .init(id: 1, name: "mads", imageName: "dsafsad", progress: 20, learningMaterials: []))
+        LearningMaterialsView(item: MainViewModel().categories.items.first ?? .init(id: 1, name: "name", imageName: "imageName", progress: 20, learningMaterials: []))
     }
 
 }
