@@ -22,12 +22,14 @@
 		77E71CEA2AE9872500C0D166 /* GardenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CE92AE9872500C0D166 /* GardenModel.swift */; };
 		77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */; };
 		77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */; };
+		D45B80EA2AEFE86D007D4E34 /* ElecrticityVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D45B80E92AEFE86D007D4E34 /* ElecrticityVideo1.mp4 */; };
 		D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */; };
 		D49E5CAD2AED3B0C006CC90E /* LearningMaterialsLocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E5CAC2AED3B0C006CC90E /* LearningMaterialsLocked.swift */; };
 		D49E5CAF2AED4465006CC90E /* LearningMaterialsUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E5CAE2AED4465006CC90E /* LearningMaterialsUnlocked.swift */; };
-		D49E5CB12AED557B006CC90E /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E5CB02AED557B006CC90E /* VideoView.swift */; };
 		D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */; };
 		D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */; };
+		D4F066192AEFF6DA00AC7B98 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F066182AEFF6DA00AC7B98 /* VideoView.swift */; };
+		D4F0661B2AEFF98100AC7B98 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F0661A2AEFF98100AC7B98 /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +50,14 @@
 		77E71CE92AE9872500C0D166 /* GardenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenModel.swift; sourceTree = "<group>"; };
 		77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardView.swift; sourceTree = "<group>"; };
 		77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardModel.swift; sourceTree = "<group>"; };
+		D45B80E92AEFE86D007D4E34 /* ElecrticityVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElecrticityVideo1.mp4; sourceTree = "<group>"; };
 		D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMaterialsView.swift; sourceTree = "<group>"; };
 		D49E5CAC2AED3B0C006CC90E /* LearningMaterialsLocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsLocked.swift; sourceTree = "<group>"; };
 		D49E5CAE2AED4465006CC90E /* LearningMaterialsUnlocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsUnlocked.swift; sourceTree = "<group>"; };
-		D49E5CB02AED557B006CC90E /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterials.swift; sourceTree = "<group>"; };
+		D4F066182AEFF6DA00AC7B98 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		D4F0661A2AEFF98100AC7B98 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		770927482ADDE7B700273776 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D45B80E92AEFE86D007D4E34 /* ElecrticityVideo1.mp4 */,
 				771F4D7D2ADDF2460001024A /* categoriesModelData.json */,
 			);
 			path = Resources;
@@ -175,7 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */,
-				D49E5CB02AED557B006CC90E /* VideoView.swift */,
+				D4F066182AEFF6DA00AC7B98 /* VideoView.swift */,
+				D4F0661A2AEFF98100AC7B98 /* VideoController.swift */,
 			);
 			path = ModalMaterialsView;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DBDCA82ADD910100C68CB8 /* Preview Assets.xcassets in Resources */,
+				D45B80EA2AEFE86D007D4E34 /* ElecrticityVideo1.mp4 in Resources */,
 				771F4D7E2ADDF2460001024A /* categoriesModelData.json in Resources */,
 				77DBDCA42ADD910100C68CB8 /* Assets.xcassets in Resources */,
 			);
@@ -269,7 +276,8 @@
 				D49E5CAF2AED4465006CC90E /* LearningMaterialsUnlocked.swift in Sources */,
 				77DBDCA22ADD90FF00C68CB8 /* MainContentView.swift in Sources */,
 				7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */,
-				D49E5CB12AED557B006CC90E /* VideoView.swift in Sources */,
+				D4F066192AEFF6DA00AC7B98 /* VideoView.swift in Sources */,
+				D4F0661B2AEFF98100AC7B98 /* VideoController.swift in Sources */,
 				77DBDCAF2ADD939000C68CB8 /* CategoriesRowView.swift in Sources */,
 				D49E5CAD2AED3B0C006CC90E /* LearningMaterialsLocked.swift in Sources */,
 				77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */,
