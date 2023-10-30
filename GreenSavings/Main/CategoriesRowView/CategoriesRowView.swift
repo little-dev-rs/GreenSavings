@@ -19,7 +19,7 @@ struct CategoriesRowView: View {
                 .padding(.vertical)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
-                    ForEach(model.items) { item in
+                    ForEach(model.items, id: \.self) { item in
                         NavigationLink(destination: LearningMaterialsView(item: item),
                                        label: {
                             CategoryCardView(model: item)

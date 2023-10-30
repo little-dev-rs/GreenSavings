@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModalMaterialsView: View {
     
-    @Binding var isShowed: Bool
+//    @Binding var isShowed: Bool
     @State var isAlertActive: Bool = false
     
     var learningMaterial: LearningMaterials
@@ -18,10 +18,12 @@ struct ModalMaterialsView: View {
     
         ZStack {
             VStack(alignment: .center){
+                let _print = print("test1 3 learningMaterial \(learningMaterial)")
                 Image(learningMaterial.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 350, height: 240)
+                
                 Text(learningMaterial.textMaterials)
                     .font(
                         Font.custom("SF Pro Display", size: 18)
@@ -36,17 +38,14 @@ struct ModalMaterialsView: View {
                     Text("Done")
                 }
             }
-            if isAlertActive {
+            if isAlertActive  {
                 CustomAlertView(isActive: $isAlertActive, model: learningMaterial.giftPlant, action: {
-                    isShowed = false
+//                    isShowed = false
                 })
             }
         }
     }
-    
-    func print2(model: PlantCardModel) {
-        print("model \(model)")
-    }
+
 }
 
 //struct ModalMaterialsView_Previews: PreviewProvider {

@@ -9,7 +9,10 @@ import SwiftUI
 
 struct LearningMaterialsView: View {
     
-    @State var showModal = false
+    @State var showModal1 = false
+    @State var showModal2 = false
+    @State var showModal3 = false
+    @State var showModal4 = false
     
     var item: CategoryCardModel
     
@@ -19,15 +22,38 @@ struct LearningMaterialsView: View {
             
             ScrollView(.vertical) {
                 VStack(spacing: 20) {
-                    ForEach(item.learningMaterials) { material in
-                        LearningMaterialCard(model: material)
-                            .onTapGesture {
-                                self.showModal = true
-                            }
-                            .sheet(isPresented: $showModal, content: {
-                                ModalMaterialsView(isShowed: $showModal, learningMaterial: material)
-                            })
-                    }
+                    let firstCategory = item.learningMaterials[0]
+                    LearningMaterialCard(model: firstCategory)
+                        .onTapGesture {
+                            self.showModal1 = true
+                        }
+                        .sheet(isPresented: $showModal1, content: {
+                            ModalMaterialsView(learningMaterial: firstCategory)
+                        })
+                    let secondCategory = item.learningMaterials[1]
+                    LearningMaterialCard(model: secondCategory)
+                        .onTapGesture {
+                            self.showModal2 = true
+                        }
+                        .sheet(isPresented: $showModal2, content: {
+                            ModalMaterialsView(learningMaterial: secondCategory)
+                        })
+                    let thirdCategory = item.learningMaterials[2]
+                    LearningMaterialCard(model: thirdCategory)
+                        .onTapGesture {
+                            self.showModal3 = true
+                        }
+                        .sheet(isPresented: $showModal3, content: {
+                            ModalMaterialsView(learningMaterial: thirdCategory)
+                        })
+                    let fourthCategory = item.learningMaterials[3]
+                    LearningMaterialCard(model: fourthCategory)
+                        .onTapGesture {
+                            self.showModal4 = true
+                        }
+                        .sheet(isPresented: $showModal4, content: {
+                            ModalMaterialsView(learningMaterial: fourthCategory)
+                        })
                 }
             }.padding(.top)
                 .navigationTitle(item.name)
