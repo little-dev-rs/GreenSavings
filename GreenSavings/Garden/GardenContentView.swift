@@ -17,18 +17,21 @@ struct GardenContentView: View {
     var body: some View {
         
         NavigationView {
-            
-            VStack {
-                
-                ScrollView {
-
-                    ForEach(plants) { plant in
-                        PlantCardView(model: plant)
-                            .padding()
-                    }
+            ZStack {
+                Image("background")
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack {
                     
+                    ScrollView {
+                        
+                        ForEach(plants) { plant in
+                            PlantCardView(model: plant)
+                                .padding()
+                        }
+                        
+                    }
                 }
-
             }
         }
         .navigationTitle("My garden")
