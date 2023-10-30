@@ -26,9 +26,8 @@ struct MainContentView: View {
                                        height: UIScreen.main.bounds.size.height * 0.2)
                     }
                     
-                    CategoriesRowView(model: viewModel.categories,
-                                      height: UIScreen.main.bounds.size.height * 0.52)
-                    .padding(.top)
+                    CategoriesRowView(model: viewModel.categories, height: UIScreen.main.bounds.size.height * 0.50)
+             
                 }
                 .padding()
                 .navigationTitle(viewModel.navigationTitleText)

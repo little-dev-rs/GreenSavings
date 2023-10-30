@@ -37,8 +37,6 @@ struct ModalMaterialsView: View {
                 }
             }
             if isAlertActive {
-//                print2(model: learningMaterial.giftPlant)
-                
                 CustomAlertView(isActive: $isAlertActive, model: learningMaterial.giftPlant, action: {
                     isShowed = false
                 })

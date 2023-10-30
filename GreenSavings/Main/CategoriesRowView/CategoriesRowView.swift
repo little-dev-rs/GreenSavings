@@ -33,9 +33,9 @@ struct CategoriesRowView: View {
     }
 }
 
-struct CategoryRow_Previews : PreviewProvider {
-    static var previews: some View {
-        CategoriesRowView(model: MainViewModel().categories, height: 300)
-    }
-}
+//struct CategoryRow_Previews : PreviewProvider {
+ //   static var previews: some View {
+//        CategoriesRowView(model: MainViewModel().categories?.first, height: 300)
+ //   }
+//}
 
