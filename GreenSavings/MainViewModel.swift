@@ -29,7 +29,7 @@ class MainViewModel {
                                                                                        imageName: "Garden/rose")),
                                                                 .init(learningMaterialsTitle: "Video",
                                                                       isUnlocked: true,
-                                                                      isLearned: false,
+                                                                      isLearned: false, imageName: "ElecrticityVideo1",
                                                                       giftPlant: .init(name: "Pine",
                                                                                        description: "Pine trees produce a sticky substance called resin, which has been used for various purposes, including making turpentine and sealing boats.",
                                                                                        imageName: "Garden/pine")),
@@ -78,7 +78,7 @@ class MainViewModel {
                                                              ]),
                                                        .init(id: 3,
                                                              name: "Recycling",
-                                                             imageName: "Main/energy",
+                                                             imageName: "Recycling_card",
                                                              progress: 0,
                                                              learningMaterials: [
                                                                 .init(learningMaterialsTitle: "Information",
@@ -108,7 +108,7 @@ class MainViewModel {
                                                              ]) ,
                                                        .init(id: 4,
                                                              name: "Green mobility",
-                                                             imageName: "Main/energy",
+                                                             imageName: "Greenmobilitycard",
                                                              progress: 0,
                                                              learningMaterials: [
                                                                 .init(learningMaterialsTitle: "One",

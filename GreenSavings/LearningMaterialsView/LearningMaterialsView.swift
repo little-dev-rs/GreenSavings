@@ -36,7 +36,7 @@ struct LearningMaterialsView: View {
                             self.showModal2 = true
                         }
                         .sheet(isPresented: $showModal2, content: {
-                            ModalMaterialsView(learningMaterial: secondCategory)
+                            VideoView(learningMaterial: secondCategory)
                         })
                     let thirdCategory = item.learningMaterials[2]
                     LearningMaterialCard(model: thirdCategory)

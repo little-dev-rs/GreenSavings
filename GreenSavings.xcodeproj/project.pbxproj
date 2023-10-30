@@ -30,6 +30,7 @@
 		D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */; };
 		D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */; };
 		D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */; };
+		D4F0661D2AF00CD400AC7B98 /* ElecrticityVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D4F0661C2AF00CD400AC7B98 /* ElecrticityVideo1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMaterialsView.swift; sourceTree = "<group>"; };
 		D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialsView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterials.swift; sourceTree = "<group>"; };
+		D4F0661C2AF00CD400AC7B98 /* ElecrticityVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElecrticityVideo1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		770927482ADDE7B700273776 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D4F0661C2AF00CD400AC7B98 /* ElecrticityVideo1.mp4 */,
 				771F4D7D2ADDF2460001024A /* categoriesModelData.json */,
 			);
 			path = Resources;
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DBDCA82ADD910100C68CB8 /* Preview Assets.xcassets in Resources */,
+				D4F0661D2AF00CD400AC7B98 /* ElecrticityVideo1.mp4 in Resources */,
 				771F4D7E2ADDF2460001024A /* categoriesModelData.json in Resources */,
 				77DBDCA42ADD910100C68CB8 /* Assets.xcassets in Resources */,
 			);
