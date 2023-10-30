@@ -14,6 +14,8 @@
 		777F76F92AEB1AF40018E2EC /* LearningMaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */; };
 		7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6332ADED57800CAEF40 /* MainViewModel.swift */; };
 		7788D6362ADEDBF200CAEF40 /* GardenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */; };
+		77987E652AF0084900F3FF8B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77987E642AF0084900F3FF8B /* VideoView.swift */; };
+		77987E672AF0085700F3FF8B /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77987E662AF0085700F3FF8B /* VideoController.swift */; };
 		77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDC9F2ADD90FF00C68CB8 /* GreenSavingsApp.swift */; };
 		77DBDCA22ADD90FF00C68CB8 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */; };
 		77DBDCA42ADD910100C68CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DBDCA32ADD910100C68CB8 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialCard.swift; sourceTree = "<group>"; };
 		7788D6332ADED57800CAEF40 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenCardView.swift; sourceTree = "<group>"; };
+		77987E642AF0084900F3FF8B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		77987E662AF0085700F3FF8B /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		77DBDC9C2ADD90FF00C68CB8 /* GreenSavings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenSavings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DBDC9F2ADD90FF00C68CB8 /* GreenSavingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSavingsApp.swift; sourceTree = "<group>"; };
 		77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */,
+				77987E642AF0084900F3FF8B /* VideoView.swift */,
+				77987E662AF0085700F3FF8B /* VideoController.swift */,
 			);
 			path = ModalMaterialsView;
 			sourceTree = "<group>";
@@ -290,9 +296,11 @@
 				77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */,
 				77E71CEA2AE9872500C0D166 /* GardenModel.swift in Sources */,
 				777F76F92AEB1AF40018E2EC /* LearningMaterialCard.swift in Sources */,
+				77987E652AF0084900F3FF8B /* VideoView.swift in Sources */,
 				77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */,
 				D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */,
 				D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */,
+				77987E672AF0085700F3FF8B /* VideoController.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
 				D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,
@@ -418,9 +426,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GreenSavings/GreenSavings.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GreenSavings/Preview Content\"";
+				DEVELOPMENT_TEAM = M9SN9YUYC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -438,8 +448,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GreenSavings.GreenSavings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenSavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -454,9 +465,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GreenSavings/GreenSavings.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GreenSavings/Preview Content\"";
+				DEVELOPMENT_TEAM = M9SN9YUYC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -474,8 +487,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GreenSavings.GreenSavings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenSavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
