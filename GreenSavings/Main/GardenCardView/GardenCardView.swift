@@ -35,8 +35,8 @@ struct GardenCardView: View {
 
 }
 
-struct GardenView_Previews: PreviewProvider {
-    static var previews: some View {
-        GardenCardView(gardenModel: .init(name: "My Garden", imageName: "Main/garden", plants: []), height: 170)
-    }
-}
+//struct GardenView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GardenCardView(gardenModel: .init(name: "My Garden", imageName: "Main/garden", plants: []), height: 170)
+//    }
+//}

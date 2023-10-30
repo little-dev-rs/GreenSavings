@@ -8,22 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct LearningMaterials: Identifiable{
-    var id=UUID()
-    
+struct LearningMaterials: Identifiable {
+    var id = UUID()
+    var backgroundColor: Color = .cyan
     var learningMaterialsTitle: String
-    
-    var unlock: Int
-    var foregroundColor: Color = .pink
-    //init color in MainViewModel
-    
-    //the associated modals to materials
-    var imageName=" "
-    var textModal=" "
-    //init the image and text in MainViewModel
+    var isUnlocked: Bool
+    var isLearned: Bool
+    var imageName: String = " " // use real info
+    var textMaterials: String = " " // use real info
+    var giftPlant: PlantCardModel
 }
-
-
-//"Information", "What to buy", "Article", "Video", "Article", "Curiosity", "What to buy"
-
-//backgroundColor is to set in ContentViewModel for each learningMaterialsTitle, and remove the init there

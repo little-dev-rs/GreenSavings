@@ -9,69 +9,40 @@ import SwiftUI
 
 struct LearningMaterialsView: View {
     
+    @State var showModal = false
+    
     var item: CategoryCardModel
     
-    @State var showModal=false
-    @State var changeColor=0
-    
     var body: some View {
+        
         NavigationStack{
-            ScrollView(.vertical){
-                //learning Materials card
-                ForEach(item.learningMaterials) { learningMaterials in
-                    
-                    ZStack(alignment: .leading){
-                        if learningMaterials.unlock<=changeColor{
-                            
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 350, height: 80)
-                                .background(learningMaterials.foregroundColor)
-                                .cornerRadius(20)
-                            Text(learningMaterials.learningMaterialsTitle)
-                              .font(
-                                Font.custom("SF Pro Display", size: 34)
-                                  .weight(.medium)
-                              )
-                              .kerning(0.374)
-                              .foregroundColor(.black)
-                              .padding()
-                        }
-                            else{
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 350, height: 80)
-                                    .background(Color(red: 0.36, green: 0.35, blue: 0.35).opacity(0.88))
-                                    .cornerRadius(20)
-                                Text(learningMaterials.learningMaterialsTitle)
-                                  .font(
-                                    Font.custom("SF Pro Display", size: 34)
-                                      .weight(.medium)
-                                  )
-                                  .kerning(0.374)
-                                  .foregroundColor(.black)
-                                  .padding()
+            
+            ScrollView(.vertical) {
+                VStack(spacing: 20) {
+                    ForEach(item.learningMaterials) { material in
+                        LearningMaterialCard(model: material)
+                            .onTapGesture {
+                                self.showModal = true
                             }
+                            .sheet(isPresented: $showModal, content: {
+                                ModalMaterialsView(isShowed: $showModal, learningMaterial: material)
+                            })
                     }
-                    .onTapGesture {
-                        self.showModal=true
-                    }
-                    .sheet(isPresented: $showModal, content: {
-                        ModalMaterialsView(isShowed: $showModal, learningMaterials: learningMaterials, changeColor: $changeColor)
-                    })
                 }
-            }
-            .navigationTitle(item.name)
-            .padding()
+            }.padding(.top)
+                .navigationTitle(item.name)
         }
+        .background(Color(red: 0.95, green: 0.95, blue: 0.95))
+        
     }
+    
 }
 
+struct LearningMaterialsView_Previews : PreviewProvider {
 
-/*
- #Preview {
- LearningMaterialsView()
- }
- 
- */
+    static var previews: some View {
+        LearningMaterialsView(item: MainViewModel().categories.items.first ?? .init(id: 1, name: "name", imageName: "imageName", progress: 20, learningMaterials: []))
+    }
+
+}
 

@@ -20,13 +20,13 @@ struct MainContentView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     NavigationLink {
-                        GardenContentView(model: viewModel.gardenModel)
+                        GardenContentView()
                     } label: {
                         GardenCardView(gardenModel: viewModel.gardenModel,
                                        height: UIScreen.main.bounds.size.height * 0.2)
                     }
                     
-                    CategoriesRowView(model: .init(name: "Categories", items: viewModel.items), height: UIScreen.main.bounds.size.height * 0.50)
+                    CategoriesRowView(model: viewModel.categories, height: UIScreen.main.bounds.size.height * 0.50)
              
                 }
                 .padding()

@@ -11,6 +11,7 @@
 		771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F4D772ADDEDBA0001024A /* CategoriesRowModel.swift */; };
 		771F4D7B2ADDEEE30001024A /* CategoryCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F4D7A2ADDEEE30001024A /* CategoryCardModel.swift */; };
 		771F4D7E2ADDF2460001024A /* categoriesModelData.json in Resources */ = {isa = PBXBuildFile; fileRef = 771F4D7D2ADDF2460001024A /* categoriesModelData.json */; };
+		777F76F92AEB1AF40018E2EC /* LearningMaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */; };
 		7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6332ADED57800CAEF40 /* MainViewModel.swift */; };
 		7788D6362ADEDBF200CAEF40 /* GardenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */; };
 		77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDC9F2ADD90FF00C68CB8 /* GreenSavingsApp.swift */; };
@@ -20,6 +21,8 @@
 		77DBDCAF2ADD939000C68CB8 /* CategoriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBDCAE2ADD939000C68CB8 /* CategoriesRowView.swift */; };
 		77E0B62F2AE2C3C8007A3B92 /* GardenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */; };
 		77E71CEA2AE9872500C0D166 /* GardenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CE92AE9872500C0D166 /* GardenModel.swift */; };
+		77E71CED2AE98C2000C0D166 /* RoundedRectProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CEC2AE98C2000C0D166 /* RoundedRectProgressViewStyle.swift */; };
+		77E71CF02AE99E7000C0D166 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CEF2AE99E7000C0D166 /* CustomAlertView.swift */; };
 		77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */; };
 		77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */; };
 		D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */; };
@@ -32,6 +35,7 @@
 		771F4D772ADDEDBA0001024A /* CategoriesRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRowModel.swift; sourceTree = "<group>"; };
 		771F4D7A2ADDEEE30001024A /* CategoryCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardModel.swift; sourceTree = "<group>"; };
 		771F4D7D2ADDF2460001024A /* categoriesModelData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categoriesModelData.json; sourceTree = "<group>"; };
+		777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialCard.swift; sourceTree = "<group>"; };
 		7788D6332ADED57800CAEF40 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenCardView.swift; sourceTree = "<group>"; };
 		77DBDC9C2ADD90FF00C68CB8 /* GreenSavings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenSavings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,8 @@
 		77DBDCAE2ADD939000C68CB8 /* CategoriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRowView.swift; sourceTree = "<group>"; };
 		77E0B62E2AE2C3C8007A3B92 /* GardenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenContentView.swift; sourceTree = "<group>"; };
 		77E71CE92AE9872500C0D166 /* GardenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenModel.swift; sourceTree = "<group>"; };
+		77E71CEC2AE98C2000C0D166 /* RoundedRectProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectProgressViewStyle.swift; sourceTree = "<group>"; };
+		77E71CEF2AE99E7000C0D166 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		77F3FEDA2AE7EE0D00A93B4B /* PlantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardView.swift; sourceTree = "<group>"; };
 		77F3FEDC2AE7EE4E00A93B4B /* PlantCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardModel.swift; sourceTree = "<group>"; };
 		D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMaterialsView.swift; sourceTree = "<group>"; };
@@ -65,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				77DBDCA12ADD90FF00C68CB8 /* MainContentView.swift */,
-				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
-				7788D6372ADEDC2A00CAEF40 /* GardenView */,
 				7788D6372ADEDC2A00CAEF40 /* GardenCardView */,
 				771F4D792ADDEED40001024A /* CategoriesRowView */,
 				771F4D7C2ADDEEE90001024A /* CategoryCardView */,
@@ -85,6 +89,7 @@
 		771F4D792ADDEED40001024A /* CategoriesRowView */ = {
 			isa = PBXGroup;
 			children = (
+				77E71CEB2AE98B7D00C0D166 /* ProgressBar */,
 				77DBDCAE2ADD939000C68CB8 /* CategoriesRowView.swift */,
 				771F4D772ADDEDBA0001024A /* CategoriesRowModel.swift */,
 			);
@@ -129,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				77DBDC9F2ADD90FF00C68CB8 /* GreenSavingsApp.swift */,
+				7788D6332ADED57800CAEF40 /* MainViewModel.swift */,
+				77E71CEE2AE99E5E00C0D166 /* CustomAlertView */,
 				77E0B62D2AE2C3A0007A3B92 /* Garden */,
 				770927472ADDE79D00273776 /* Main */,
 				D4BD5FB92AE2B3DE000A79B7 /* LearningMaterialsView */,
@@ -148,14 +155,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D46BA7B52AE6C95E0079FFAC /* ModalMaterialsView */ = {
-			isa = PBXGroup;
-			children = (
-				D46BA7B32AE6C9560079FFAC /* ModalMaterialsView.swift */,
-			);
-			path = ModalMaterialsView;
-			sourceTree = "<group>";
-		};
 		77E0B62D2AE2C3A0007A3B92 /* Garden */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +162,22 @@
 				77F3FEDE2AE7EE8300A93B4B /* PlantCard */,
 			);
 			path = Garden;
+			sourceTree = "<group>";
+		};
+		77E71CEB2AE98B7D00C0D166 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				77E71CEC2AE98C2000C0D166 /* RoundedRectProgressViewStyle.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		77E71CEE2AE99E5E00C0D166 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				77E71CEF2AE99E7000C0D166 /* CustomAlertView.swift */,
+			);
+			path = CustomAlertView;
 			sourceTree = "<group>";
 		};
 		77F3FEDE2AE7EE8300A93B4B /* PlantCard */ = {
@@ -187,6 +202,7 @@
 			children = (
 				D4BD5FBA2AE2B984000A79B7 /* LearningMaterials.swift */,
 				D4BD5FB72AE2B3D2000A79B7 /* LearningMaterialsView.swift */,
+				777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */,
 				D46BA7B52AE6C95E0079FFAC /* ModalMaterialsView */,
 			);
 			path = LearningMaterialsView;
@@ -263,20 +279,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E71CF02AE99E7000C0D166 /* CustomAlertView.swift in Sources */,
 				771F4D7B2ADDEEE30001024A /* CategoryCardModel.swift in Sources */,
 				771F4D762ADDED490001024A /* CategoryCardView.swift in Sources */,
 				77E0B62F2AE2C3C8007A3B92 /* GardenContentView.swift in Sources */,
 				77DBDCA22ADD90FF00C68CB8 /* MainContentView.swift in Sources */,
 				7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */,
 				77DBDCAF2ADD939000C68CB8 /* CategoriesRowView.swift in Sources */,
+				77E71CED2AE98C2000C0D166 /* RoundedRectProgressViewStyle.swift in Sources */,
 				77F3FEDB2AE7EE0D00A93B4B /* PlantCardView.swift in Sources */,
 				77E71CEA2AE9872500C0D166 /* GardenModel.swift in Sources */,
+				777F76F92AEB1AF40018E2EC /* LearningMaterialCard.swift in Sources */,
 				77F3FEDD2AE7EE4E00A93B4B /* PlantCardModel.swift in Sources */,
 				D4BD5FB82AE2B3D2000A79B7 /* LearningMaterialsView.swift in Sources */,
 				D4BD5FBB2AE2B984000A79B7 /* LearningMaterials.swift in Sources */,
 				77DBDCA02ADD90FF00C68CB8 /* GreenSavingsApp.swift in Sources */,
 				D46BA7B42AE6C9560079FFAC /* ModalMaterialsView.swift in Sources */,
-				D4BD5FBF2AE2B9ED000A79B7 /* LearningMaterialsModel.swift in Sources */,
 				771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */,
 				7788D6362ADEDBF200CAEF40 /* GardenCardView.swift in Sources */,
 			);
