@@ -28,12 +28,12 @@ struct VideoView: View {
     }
 }
 
-#Preview{
-VideoView(learningMaterial: LearningMaterials(learningMaterialsTitle: "Video",
-                                               isUnlocked: true,
-                                               isLearned: false, imageName: "ElecrticityVideo1",
-                                               giftPlant: .init(name: "Pine",
-                                                                description: "Pine trees produce a sticky substance called resin, which has been used for various purposes, including making turpentine and sealing boats.",
-                                                                imageName: "Garden/pine"))
-          )
-}
+//#Preview{
+//VideoView(learningMaterial: LearningMaterials(learningMaterialsTitle: "Video",
+//                                               isUnlocked: true,
+//                                               isLearned: false, imageName: "ElecrticityVideo1",
+//                                               giftPlant: .init(name: "Pine",
+//                                                                description: "Pine trees produce a sticky substance called resin, which has been used for various purposes, including making turpentine and sealing boats.",
+//                                                                imageName: "Garden/pine"))
+//          )
+//}
