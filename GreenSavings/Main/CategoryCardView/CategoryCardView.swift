@@ -11,7 +11,7 @@ struct CategoryCardView: View {
     
     var model: CategoryCardModel
     
-    @State private var value: Double = 80
+    @State private var value: Double = 40
     
     var body: some View {
 

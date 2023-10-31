@@ -50,8 +50,8 @@ class MainViewModel {
                                                              ]),
                                                        .init(id: 2,
                                                              name: "Water",
-                                                             imageName: "Main/water",
-                                                             progress: 0,
+                                                             imageName: "Main/Water_card",
+                                                             progress: 20,
                                                              learningMaterials: [
                                                                 .init(learningMaterialsTitle: "Information",
                                                                       isUnlocked: true,
@@ -84,8 +84,8 @@ class MainViewModel {
                                                              ]),
                                                        .init(id: 3,
                                                              name: "Recycling",
-                                                             imageName: "Recycling_card",
-                                                             progress: 0,
+                                                             imageName: "Main/Recycling_card",
+                                                             progress: 10,
                                                              learningMaterials: [
                                                                 .init(learningMaterialsTitle: "Information",
                                                                       isUnlocked: true,
@@ -118,8 +118,8 @@ class MainViewModel {
                                                              ]) ,
                                                        .init(id: 4,
                                                              name: "Green mobility",
-                                                             imageName: "Greenmobilitycard",
-                                                             progress: 0,
+                                                             imageName: "Main/Greenmobilitycard",
+                                                             progress: 30,
                                                              learningMaterials: [
                                                                 .init(learningMaterialsTitle: "One",
                                                                       isUnlocked: true,
