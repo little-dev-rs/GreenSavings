@@ -9,106 +9,63 @@ import SwiftUI
 
 struct ModalMaterialsView: View {
     
-//    @Binding var isShowed: Bool
+    @Environment(\.presentationMode) var presentationMode
     @State var isAlertActive: Bool = false
     
-    var learningMaterial: LearningMaterials
+    @State var learningMaterial: LearningMaterials
     
     var body: some View {
-    
+        
         ZStack {
             VStack(alignment: .center){
-                Image(learningMaterial.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 350, height: 240)
                 
-                Text(learningMaterial.textMaterials)
-                    .font(
-                        Font.custom("SF Pro Display", size: 18)
-                            .weight(.medium)
-                    )
-                    .multilineTextAlignment(.center)
+                Text(learningMaterial.materialType.title)
+                    .font(.title).bold()
                     .padding()
                 
+                ScrollView {
+                    
+                    Image(learningMaterial.materialType.assetName)
+                        .resizable()
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .padding(.horizontal)
+                        .frame(height: 220)
+                        .aspectRatio(1, contentMode: .fill)
+                        
+                    Text(learningMaterial.materialType.description)
+                        .font(.body)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                    
+                }
                 Button {
-                    isAlertActive = true
+                   
+                    if !learningMaterial.isLearned {
+                        isAlertActive = true
+                    } else {
+                        presentationMode.wrappedValue.dismiss()
+                    }
                 } label: {
-                    Text("Done")
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.black)
+                        Text("Done")
+                            .font(.title3).bold()
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                    
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding()
                 }
             }
-            if isAlertActive  {
+            if isAlertActive {
                 CustomAlertView(isActive: $isAlertActive, model: learningMaterial.giftPlant, action: {
-//                    isShowed = false
+                    learningMaterial.isLearned = true
+                    presentationMode.wrappedValue.dismiss()
                 })
             }
         }
     }
-
+    
 }
-
-//struct ModalMaterialsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ModalMaterialsView(isShowed: false., learningMaterials: .init(learningMaterialsTitle: "", isUnlocked: true, isLearned: false, giftPlant: .init(name: "", description: "", imageName: "")))
-//    }
-//}
-
-
-//
-//  ModalMaterialsView.swift
-//  GreenSavings
-//
-//  Created by Davide Galdiero on 23/10/23.
-//
-//
-//import SwiftUI
-//
-//
-//struct ModalMaterialsView: View {
-//
-//    @Binding var isShowed: Bool
-//
-//    var learningMaterials: LearningMaterials
-//
-//    @Binding var changeColor: Int
-//
-//    var body: some View {
-//        VStack{
-//            Rectangle()
-//                .foregroundColor(.clear)
-//                .frame(width: 347, height: 246)
-//                .background(
-//                    Image(learningMaterials.imageName)
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fill)
-//                        .frame(width: 347, height: 246)
-//                        .clipped()
-//                )
-//                .cornerRadius(20)
-//            ScrollView(.vertical){
-//                Text(learningMaterials.textModal)
-//                    .lineLimit(nil)
-//                    .font(
-//                        Font.custom("SF Pro Display", size: 18)
-//                            .weight(.medium)
-//                    )
-//                    .kerning(0.374)
-//                    .foregroundColor(.black)
-//                    .frame(width: 322, alignment: .top)
-//                    .padding()
-//            }
-//            Button(action: {
-//                self.isShowed=false
-//                self.changeColor+=1
-//            }, label: {
-//                Text("Done")
-//            })
-//        }
-//    }
-//}
-//
-///*
-// #Preview {
-// ModalMaterialsView()
-// }
-// */

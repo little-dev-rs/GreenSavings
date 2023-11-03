@@ -17,24 +17,35 @@ struct GardenContentView: View {
     var body: some View {
         
         NavigationView {
-            ZStack {
+    
+            
+            ZStack(alignment: .top) {
+        
+                
                 Image("background")
                     .resizable()
                     .ignoresSafeArea()
+                
                 VStack {
-                    
-                    ScrollView {
-                        
-                        ForEach(plants) { plant in
-                            PlantCardView(model: plant)
-                                .padding()
+                 
+                        ScrollView {
+                            
+                            ForEach(plants) { plant in
+                                PlantCardView(model: plant)
+                                    .padding()
+                            }
+                
                         }
-                        
-                    }
+                        .mask(
+                            LinearGradient(gradient: Gradient(colors: [.clear, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white,.white, .white, .white, .white]),
+                                           startPoint: .top, endPoint: .bottom)
+                        )
+                        .edgesIgnoringSafeArea(.bottom)
                 }
             }
         }
         .navigationTitle("My garden")
+        
     }
 }
 
@@ -43,3 +54,27 @@ struct GardenContentView_Previews: PreviewProvider {
         GardenContentView()
     }
 }
+
+
+//struct ContentView: View {
+//    var body: some View {
+//        NavigationView {
+//            ScrollView {
+//                VStack(spacing: 10) {
+//                    ForEach(0..<50) { index in
+//                        Text("Item \(index)")
+//                            .frame(height: 44)
+//                            .background(Color.blue)
+//                            .foregroundColor(.white)
+//                    }
+//                }
+//                .padding() // add padding to avoid overlapping
+//            }
+//            .mask(
+//                LinearGradient(gradient: Gradient(colors: [.clear, .white, .clear]),
+//                               startPoint: .top, endPoint: .bottom)
+//            )
+//            .navigationBarTitle("Title", displayMode: .inline)
+//        }
+//    }
+//}

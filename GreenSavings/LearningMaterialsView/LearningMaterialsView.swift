@@ -32,7 +32,16 @@ struct LearningMaterialsView: View {
                                 self.showModal1 = true
                             }
                             .sheet(isPresented: $showModal1, content: {
-                                ModalMaterialsView(learningMaterial: firstCategory)
+                                switch firstCategory.materialType {
+                                case .article:
+                                    ModalMaterialsView(learningMaterial: firstCategory)
+                                case .video:
+                                    ModalMaterialsView(learningMaterial: firstCategory)//VideoView(learningMaterial: firstCategory)
+                                case .tips:
+                                    ModalMaterialsView(learningMaterial: firstCategory)
+                                case .info:
+                                    ModalMaterialsView(learningMaterial: firstCategory)
+                                }
                             })
                         let secondCategory = item.learningMaterials[1]
                         LearningMaterialCard(model: secondCategory)
@@ -70,11 +79,11 @@ struct LearningMaterialsView: View {
     }
 }
 
-struct LearningMaterialsView_Previews : PreviewProvider {
-    
-    static var previews: some View {
-        LearningMaterialsView(item: MainViewModel().categories.items.first ?? .init(id: 1, name: "name", imageName: "imageName", progress: 20, learningMaterials: []))
-    }
-    
-}
+//struct LearningMaterialsView_Previews : PreviewProvider {
+//
+//    static var previews: some View {
+//        LearningMaterialsView(item: MainViewModel().categories.items.first ?? .init(id: 1, name: "name", imageName: "imageName", progress: 20, learningMaterials: []))
+//    }
+//
+//}
 

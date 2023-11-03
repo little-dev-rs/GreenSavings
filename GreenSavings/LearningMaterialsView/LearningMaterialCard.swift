@@ -54,8 +54,8 @@ struct LearningMaterialCard: View {
     
 }
 
-struct LearningMaterialCard_Previews: PreviewProvider {
-    static var previews: some View {
-        LearningMaterialCard(model: .init(learningMaterialsTitle: "Material", isUnlocked: true, isLearned: false, giftPlant: .init(name: "oak", description: "old oak", imageName: "Garden/oak")))
-    }
-}
+//struct LearningMaterialCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LearningMaterialCard(model: .init(learningMaterialsTitle: "Material", isUnlocked: true, isLearned: false, giftPlant: .init(name: "oak", description: "old oak", imageName: "Garden/oak")))
+//    }
+//}

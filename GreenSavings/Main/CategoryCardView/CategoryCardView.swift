@@ -11,8 +11,6 @@ struct CategoryCardView: View {
     
     var model: CategoryCardModel
     
-    @State private var value: Double = 40
-    
     var body: some View {
 
         ZStack(alignment: .bottomLeading) {
@@ -33,7 +31,7 @@ struct CategoryCardView: View {
                     .font(.largeTitle).bold()
                     .foregroundColor(.white)
                 
-                ProgressView(value: value, total: 100)
+                ProgressView(value: model.progress, total: 100)
                     .progressViewStyle(RoundedRectProgressViewStyle())
                 
             }
@@ -44,8 +42,8 @@ struct CategoryCardView: View {
     
 }
 
-struct CategoryCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: "", progress: 30, learningMaterials: [.init(learningMaterialsTitle: "", isUnlocked: false, isLearned: false, giftPlant: .init(name: "oak", description: "", imageName: ""))]))
-    }
-}
+//struct CategoryCardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CategoryCardView(model: MainViewModel().categories.items.first ?? .init(id: 1, name: "", imageName: "", progress: 30, learningMaterials: [.init(learningMaterialsTitle: "", isUnlocked: false, isLearned: false, giftPlant: .init(name: "oak", description: "", imageName: ""))]))
+//    }
+//}

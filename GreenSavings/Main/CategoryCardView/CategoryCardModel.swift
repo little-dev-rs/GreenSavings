@@ -11,10 +11,11 @@ struct CategoryCardModel: Identifiable, Hashable, Equatable {
     let id: Int
     let name: String
     let imageName: String
-    var progress: Int
+    var progress: Double
     var learningMaterials: [LearningMaterials] {
         didSet {
-            progress = (learningMaterials.map { $0.isLearned }.count) / learningMaterials.count * 100
+            progress = Double((learningMaterials.map { $0.isLearned }.count) / learningMaterials.count * 100)
+            print("test1 progress \(progress)")
         }
     }
 

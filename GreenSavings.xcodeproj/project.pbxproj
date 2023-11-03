@@ -11,6 +11,8 @@
 		771F4D782ADDEDBA0001024A /* CategoriesRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F4D772ADDEDBA0001024A /* CategoriesRowModel.swift */; };
 		771F4D7B2ADDEEE30001024A /* CategoryCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F4D7A2ADDEEE30001024A /* CategoryCardModel.swift */; };
 		771F4D7E2ADDF2460001024A /* categoriesModelData.json in Resources */ = {isa = PBXBuildFile; fileRef = 771F4D7D2ADDF2460001024A /* categoriesModelData.json */; };
+		7749D7392AF30C5B001B10DB /* electricityVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7749D7382AF30C5B001B10DB /* electricityVideo.mp4 */; };
+		7749D73D2AF3122C001B10DB /* output2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7749D73C2AF3122C001B10DB /* output2.mov */; };
 		777F76F92AEB1AF40018E2EC /* LearningMaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */; };
 		7788D6342ADED57800CAEF40 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6332ADED57800CAEF40 /* MainViewModel.swift */; };
 		7788D6362ADEDBF200CAEF40 /* GardenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */; };
@@ -37,6 +39,8 @@
 		771F4D772ADDEDBA0001024A /* CategoriesRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRowModel.swift; sourceTree = "<group>"; };
 		771F4D7A2ADDEEE30001024A /* CategoryCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardModel.swift; sourceTree = "<group>"; };
 		771F4D7D2ADDF2460001024A /* categoriesModelData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categoriesModelData.json; sourceTree = "<group>"; };
+		7749D7382AF30C5B001B10DB /* electricityVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = electricityVideo.mp4; sourceTree = "<group>"; };
+		7749D73C2AF3122C001B10DB /* output2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output2.mov; sourceTree = "<group>"; };
 		777F76F82AEB1AF40018E2EC /* LearningMaterialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterialCard.swift; sourceTree = "<group>"; };
 		7788D6332ADED57800CAEF40 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7788D6352ADEDBF100CAEF40 /* GardenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenCardView.swift; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 		770927482ADDE7B700273776 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7749D73C2AF3122C001B10DB /* output2.mov */,
 				771F4D7D2ADDF2460001024A /* categoriesModelData.json */,
+				7749D7382AF30C5B001B10DB /* electricityVideo.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				77DBDCA82ADD910100C68CB8 /* Preview Assets.xcassets in Resources */,
 				771F4D7E2ADDF2460001024A /* categoriesModelData.json in Resources */,
 				77DBDCA42ADD910100C68CB8 /* Assets.xcassets in Resources */,
+				7749D73D2AF3122C001B10DB /* output2.mov in Resources */,
+				7749D7392AF30C5B001B10DB /* electricityVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
